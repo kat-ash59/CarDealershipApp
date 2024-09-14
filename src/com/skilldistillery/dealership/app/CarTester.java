@@ -1,9 +1,11 @@
 package com.skilldistillery.dealership.app;
- com.skilldistillery.dealership.entities;
+import com.skilldistillery.dealership.entities.*;
 
-public class CarTester {
+public class CarTester 
+{
 
-	  public static void main(String[] args) {
+	  public static void main(String[] args) 
+	  {
 	    // Create two Cars and assign fields
 	    Car fredsCar = new Car();
 	    fredsCar.make = "Kia";
@@ -29,6 +31,7 @@ public class CarTester {
 	    // Get the cars' data and display that
 	    System.out.println("Fred car data: " + fredCarData);
 	    System.out.println("Bernices Car data: " + bernicesCarData);
-	  }
+	    
+	  } // end main
 
-	}
+} // end class CarTester
