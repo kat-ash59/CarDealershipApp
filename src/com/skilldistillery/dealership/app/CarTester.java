@@ -29,8 +29,8 @@ public class CarTester
 	    String bernicesCarData = bernicesCar.toString();
 
 	    // Get the cars' data and display that
-	    System.out.println("Fred car data: " + fredCarData);
-	    System.out.println("Bernices Car data: " + bernicesCarData);
+	    System.out.println("Fred car data: " + fredCarData + "\n");
+	    System.out.println("Bernices Car data: " + bernicesCarData + "\n");
 	    
 	  } // end main
 

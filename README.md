@@ -88,5 +88,34 @@ got a bit ahead and did this earlier complete 09/14/2024
 
 fixed errors as noted above in step 6
 
-checked code into github
+checked code into github 09/14/2024
+
+8) The CarTester class is hurling errors.
+CarTester can't find your Car class.
+
+Fix the issue. had to add import (import com.skilldistillery.dealership.entities.*;)
+
+CarTester can't touch the Car's private parts directly. We'll illustrate 2 different ways to fix this. In Car.java:
+
+Add a constructor to initialize a car's fields.
+
+Now fix the errors for fredCar in CarTester by using the new constructor.
+
+Add getters and setters.
+
+Now fix the errors for bernicesCar.
+
+InCarTester, instantiate bernicesCar without using your new 4-parameter ctor.
+
+Fix any errors you may encounter on this step.
+
+After instantiating bernicesCar, assign the make, model, color and price by using your new getter and setter methods.
+
+Run the CarTester application and verify everything is working.
+
+complete 09/14/2024
+
+checked into git hub
+
+
      

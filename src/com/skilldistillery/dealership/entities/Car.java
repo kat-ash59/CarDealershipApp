@@ -7,7 +7,7 @@ public class Car
 	   private String color;
 	   private double purchasePrice;
 	   
-	   public void Car(String make, String model, String color, double purchasePrice)
+	   public Car(String make, String model, String color, double purchasePrice)
 	   {
 		   this.make = make;
 		   this.model = model;
@@ -16,7 +16,7 @@ public class Car
 	   } // end constructor with all four fields as input
 	   
 	   // setting up constructor with no args and going to give it some default data
-	   public void Car()
+	   public Car()
 	   {
 		   this.make = "Volvo";
 		   this.model = "V70 - Turbo";
@@ -24,6 +24,9 @@ public class Car
 		   this.purchasePrice = 599.99;
 	   } // end constructor with no args setting default values
 
+	
+	   
+	   
 	   public String toString() 
 	   {
 	      String output = "make=" + make + ", model=" + model + ", color=" + color + ", purchasePrice=" + purchasePrice;
