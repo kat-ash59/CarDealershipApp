@@ -118,7 +118,7 @@ After instantiating bernicesCar, assign the make, model, color and price by usin
 
 Run the CarTester application and verify everything is working.
 
-complete 09/14/2024
+complete 09/14/2024 and runs with no issues
 
 checked into git hub
 
@@ -131,4 +131,8 @@ What data structure will you use to hold all 10 Cars?
 Create a private field that tracks how many cars are currently parked in the lot.
 
 Create a no-arg constructor.
+
+got code added, but when go to run it, gives output to CarTester rather than CarLotTester no idea why, posted question to ask for help in
+homework chat, checking code into github will check back tomorrow to see if i get an answer
+09/14/2024
      
