@@ -11,6 +11,8 @@ Java
 
 
 ### Lessons Learned
+weird stuff with line spacing in Readme.md due to markup language - need to learn more about this so can add indents and other stuff will 
+ask in next class
 
 
 Check List of items to work on:
@@ -34,32 +36,57 @@ Fix the issue -  had to add import (import com.skilldistillery.dealership.entiti
 complete 09/14/2024 
 
 6) Change the Car class's fields to have private visibility.
-   when made private CarTester.java threw errors on the following lines of cofe 
-		 fredsCar.make = "Kia";
-	    fredsCar.model = "Sportage";
-	    fredsCar.color = "Hot Pink";
-	    fredsCar.purchasePrice = 28565;
-	    --
-	    bernicesCar.make = "Toyota";
-	    bernicesCar.model = "Prius";
-	    bernicesCar.color = "Neon";
-	    bernicesCar.purchasePrice = 32199;
-	--    
-	Add getters and setters for the fields.
-		need to use these to fix errors from making private parts
-	Add a constructor with parameters for all 4 fields.
-	Add a no-arg constructor.
-	Change the name of the method getCarData to toString (because it is not a getter by convention).
-	Fix the syntax error caused by step 5.
-			to fix had to change
-			     in Car.java
-			     	displayCar() method to call toString instead of getCarData
-			     in CarTester.java
-			     	String fredCarData = fredsCar.getCarData(); -- need to use toString instead of getCarData
-	    			String bernicesCarData = bernicesCar.getCarData();  -- need to use toString instead of getCarData
+
+when made private CarTester.java threw errors on the following lines of code
+   
+fredsCar.make = "Kia";
+
+fredsCar.model = "Sportage";
+
+fredsCar.color = "Hot Pink";
+
+fredsCar.purchasePrice = 28565;
+
+
+bernicesCar.make = "Toyota";
+
+bernicesCar.model = "Prius";
+
+bernicesCar.color = "Neon";
+
+bernicesCar.purchasePrice = 32199;
+  
+Add getters and setters for the fields.
+
+need to use the getters and setters created to fix errors from making private parts
+
+Add a constructor with parameters for all 4 fields.
+
+Add a no-arg constructor.
+
+Change the name of the method getCarData to toString (because it is not a getter by convention).
+
+Fix the syntax error caused by step 5.
+
+to fix had to change
+  
+   in Car.java
+     
+   displayCar() method to call toString instead of getCarData
+   
+   in CarTester.java
+   
+   String fredCarData = fredsCar.getCarData(); -- need to use toString instead of getCarData
+   
+   String bernicesCarData = bernicesCar.getCarData();  -- need to use toString instead of getCarData
+
 complete 09/14/2024 
 
 7) Copy the below CarTester into com.skilldistillery.dealership.app.
-got a bit ahead and did this earlier complete 09/14/2024 fixed errors as noted above in step 6
+
+got a bit ahead and did this earlier complete 09/14/2024 
+
+fixed errors as noted above in step 6
+
 checked code into github
      
