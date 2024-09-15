@@ -134,5 +134,6 @@ Create a no-arg constructor.
 
 got code added, but when go to run it, gives output to CarTester rather than CarLotTester no idea why, posted question to ask for help in
 homework chat, checking code into github will check back tomorrow to see if i get an answer
-09/14/2024
+
+fixed issue with main completed 09/15/2024 checked into github
      
