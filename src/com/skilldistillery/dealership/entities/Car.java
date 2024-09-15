@@ -25,8 +25,6 @@ public class Car
 	   } // end constructor with no args setting default values
 
 	
-	   
-	   
 	   public String toString() 
 	   {
 	      String output = "make=" + make + ", model=" + model + ", color=" + color + ", purchasePrice=" + purchasePrice;

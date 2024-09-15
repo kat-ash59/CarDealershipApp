@@ -3,7 +3,7 @@
 
 ### Description
 
-
+This application is a standard application being run from the command line.  It is created to 
 
 ### Technologies used
 Java
@@ -15,7 +15,12 @@ weird stuff with line spacing in Readme.md due to markup language - need to lear
 ask in next class
 
 
-Check List of items to work on:
+Check List of items to work on to ensure requirements as of 09/14/2024 are met and completed:
+
+Things to note:
+
+did get ahead of a few items in the check list but all is good, saw some items flare up in STS and fixed them as they appeared
+
 1) Create a new Java project DealingDoogieDealership.
 completed 09/14/2024
 
@@ -93,7 +98,7 @@ checked code into github 09/14/2024
 8) The CarTester class is hurling errors.
 CarTester can't find your Car class.
 
-Fix the issue. had to add import (import com.skilldistillery.dealership.entities.*;)
+Fixed the issue. had to add import (import com.skilldistillery.dealership.entities.*;)
 
 CarTester can't touch the Car's private parts directly. We'll illustrate 2 different ways to fix this. In Car.java:
 
@@ -117,5 +122,13 @@ complete 09/14/2024
 
 checked into git hub
 
+9)  Create a class in package com.skilldistillery.dealership.entities called CarLot. This is where Dealing Doogie will park up to a maximum of 10 Cars. In CarLot:
 
+Create a private field to hold the cars. 
+
+What data structure will you use to hold all 10 Cars?
+
+Create a private field that tracks how many cars are currently parked in the lot.
+
+Create a no-arg constructor.
      
