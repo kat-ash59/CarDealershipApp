@@ -8,25 +8,25 @@ public class CarTester
 	  {
 	    // Create two Cars and assign fields
 	    Car fredsCar = new Car();
-	    fredsCar.make = "Kia";
-	    fredsCar.model = "Sportage";
-	    fredsCar.color = "Hot Pink";
-	    fredsCar.purchasePrice = 28565;
+	    fredsCar.setMake("Kia");
+	    fredsCar.setModel("Sportage");
+	    fredsCar.setColor("Hot Pink");
+	    fredsCar.setPurchasePrice(28565.99);
 
 	    Car bernicesCar = new Car();
 
-	    bernicesCar.make = "Toyota";
-	    bernicesCar.model = "Prius";
-	    bernicesCar.color = "Neon";
-	    bernicesCar.purchasePrice = 32199;
+	    bernicesCar.setMake("Toyota");
+	    bernicesCar.setModel("Prius");
+	    bernicesCar.setColor("Neon Green");
+	    bernicesCar.setPurchasePrice(32199.99);
 
 	    // Have the cars display themselves
 	    fredsCar.displayCar();
 	    bernicesCar.displayCar();
 	    System.out.println();
 
-	    String fredCarData = fredsCar.getCarData();
-	    String bernicesCarData = bernicesCar.getCarData();
+	    String fredCarData = fredsCar.toString();
+	    String bernicesCarData = bernicesCar.toString();
 
 	    // Get the cars' data and display that
 	    System.out.println("Fred car data: " + fredCarData);
