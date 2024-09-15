@@ -34,8 +34,7 @@ Fix the issue -  had to add import (import com.skilldistillery.dealership.entiti
 complete 09/14/2024 
 
 6) Change the Car class's fields to have private visibility.
-
-	when made private CarTester.java threw errors on the following lines of cofe 
+   when made private CarTester.java threw errors on the following lines of cofe 
 		 fredsCar.make = "Kia";
 	    fredsCar.model = "Sportage";
 	    fredsCar.color = "Hot Pink";
