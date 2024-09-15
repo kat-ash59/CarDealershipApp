@@ -3,7 +3,13 @@
 
 ### Description
 
-This application is a standard application being run from the command line.  It is created to 
+This application is a standard application being run from the command line.  It is created to build a Car Lot with inventory of cars for Dealing Doogie Dealership.  It has multiple methods and classes.  
+One class handles the car information.
+One class handles the car lot information.
+The two applications handle
+Car Lot Tester  handles getting the inventory created
+Car Tester handles adding a car to the inventory for a customer.
+
 
 ### Technologies used
 Java
