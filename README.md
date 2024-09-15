@@ -33,9 +33,10 @@ CarTester can't find your Car class.
 Fix the issue -  had to add import (import com.skilldistillery.dealership.entities.*;)
 complete 09/14/2024 
 
-6)  Change the Car class's fields to have private visibility.
-	when made pirvate CarTester.java threw errors on the following lines of cofe 
-		fredsCar.make = "Kia";
+6) Change the Car class's fields to have private visibility.
+
+	when made private CarTester.java threw errors on the following lines of cofe 
+		 fredsCar.make = "Kia";
 	    fredsCar.model = "Sportage";
 	    fredsCar.color = "Hot Pink";
 	    fredsCar.purchasePrice = 28565;
