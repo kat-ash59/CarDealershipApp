@@ -3,6 +3,7 @@ import com.skilldistillery.dealership.entities.*;
 
 public class CarLotTester 
 {
+	
 
 	public static void main(String[] args)
 	{
@@ -26,6 +27,7 @@ public class CarLotTester
 	
 	public static Car buildCarInfoForInventory (String make, String model, String color, double purchasePrice)
 	{
+		System.out.println("inside carlottester build car for Inventory");
 		Car newCarAddToInventory = new Car(make, model, color, purchasePrice);
 		return (newCarAddToInventory);
 	}
@@ -35,11 +37,16 @@ public class CarLotTester
 		CarLot dealingDoogiesNewCarLot = new CarLot();
 		String [] listOfCars;
 		int currentNumberOfCarsInLot;
+		int whereIsCarOnLot;
 		Car newCarForInventory = new Car();
+		String carInInventory = null;
+		Car carToCheck = new Car();
 		
-		
+		System.out.println("before add first car");
 		newCarForInventory = buildCarInfoForInventory("Volvo", "V70 turbo", "Sortof Silverish", 599.99);
+		System.out.println("after build car for Inventory");
 		dealingDoogiesNewCarLot.addCar(newCarForInventory);
+		System.out.println("after addCar");
 		
 		
 		newCarForInventory = buildCarInfoForInventory("Ford", "Escape Hybrid", "Navy Blue", 24999.99);
@@ -58,9 +65,16 @@ public class CarLotTester
 		dealingDoogiesNewCarLot.addCar(newCarForInventory);
 
 		listOfCars = dealingDoogiesNewCarLot.getListOfCarsInInventory();
-		currentNumberOfCarsInLot = dealingDoogiesNewCarLot.getNumberOfCarsInInventory();
+		currentNumberOfCarsInLot = dealingDoogiesNewCarLot.getCurrentNumberOfCarsInInventory();
 
 		printInventory(listOfCars,currentNumberOfCarsInLot);
+		
+		whereIsCarOnLot = dealingDoogiesNewCarLot.isCarInInventory("Volvo", "V70");
+		carToCheck = dealingDoogiesNewCarLot.getCar(whereIsCarOnLot);
+		System.out.println("car in Inventory " + carToCheck.toString());
+		
+		
+		
 		
 	}
 	

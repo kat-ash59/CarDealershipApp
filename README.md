@@ -143,3 +143,9 @@ homework chat, checking code into github will check back tomorrow to see if i ge
 
 fixed issue with main completed 09/15/2024 checked into github
      
+Stretch Goals
+1) In CarLot: Create another constructor allowing Dealing Doogie the option of having another car lot that can hold a larger number of cars, the number determined by Dealing Doogie when he builds the new lot.
+skipping this one for now - will circle back to it later
+
+2) In CarLot: write private int findSpecificModelCarInLot(String desiredMake, String desiredModel): Returns the spot number (0-based) of the 1st spot in the carlot that has the desired make and model of car or -1 if there is no such car (yet).
+
