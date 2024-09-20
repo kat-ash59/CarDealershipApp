@@ -1,7 +1,5 @@
 package com.skilldistillery.dealership.entities;
 
-import java.util.Collections;
-
 public class Car 
 {
 	   private String make;
@@ -26,13 +24,13 @@ public class Car
 		   this.purchasePrice = 599.99;
 	   } // end constructor with no args setting default values
 
-	   @Override
+	
 	   public String toString() 
 	   {
 	      String output = "make=" + make + ", model=" + model + ", color=" + color + ", purchasePrice=" + purchasePrice;
 	      return output;
 	   } // end method getCarData
-	   
+
 	   public void displayCar() 
 	   {
 	      String carData = toString();
@@ -44,32 +42,9 @@ public class Car
 		   return this.make;
 	   } // end method getMake
 	   
-	   public String getMake (Car carInformation)
-	   {
-		   String carsMake;
-		   carsMake = carInformation.getMake();
-		   return carsMake;
-	   }
-	   
-	   public String getMake(String carInformation)
-	   {
-		  String carMake = "default information in getMake";
-		  
-		  String[] breakCarInformationIntoParts = carInformation.split(",");
-		  int numItemsInArray = Collections.frequency(null, breakCarInformationIntoParts);
-		  
-		  // going to print out breakCarInformationIntoParts
-		  for (int i = 0; i < numItemsInArray; i++)
-		  {
-			  System.out.println("car information " + breakCarInformationIntoParts[i]);
-		  }
-		  return carMake; 	  
-	   } // end getMake
-	   
 	   
 	   public void setMake (String make)
 	   {
-		   System.out.println("inside car setMake");
 		   this.make = make;
 	   } // end setMake method
 	   
