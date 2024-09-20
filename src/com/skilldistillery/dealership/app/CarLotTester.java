@@ -12,17 +12,6 @@ public class CarLotTester
 		
 	} // end main
 	
-	public static void printInventory(String[] listOfCars, int numCars)
-	{
-		// print out inventory
-		System.out.println("\n\nThe current inventory of cars at Dealing Doogies Car Lot is:\n");
-		// System.out.println("numCars = " + numCars);
-		
-		for (int i = 0; i < numCars; i++)
-		{
-			System.out.println("\t" + listOfCars[i]);
-		}
-	} // end printInventory
 	
 	public static Car buildCarInfoForInventory (String make, String model, String color, double purchasePrice)
 	{
@@ -33,34 +22,32 @@ public class CarLotTester
 	public static void run()
 	{
 		CarLot dealingDoogiesNewCarLot = new CarLot();
-		String [] listOfCars;
-		int currentNumberOfCarsInLot;
+		int numCars;
 		Car newCarForInventory = new Car();
+		
 		
 		
 		newCarForInventory = buildCarInfoForInventory("Volvo", "V70 turbo", "Sortof Silverish", 599.99);
 		dealingDoogiesNewCarLot.addCar(newCarForInventory);
-		
+		numCars = dealingDoogiesNewCarLot.getNumberOfCarsInInventory();
 		
 		newCarForInventory = buildCarInfoForInventory("Ford", "Escape Hybrid", "Navy Blue", 24999.99);
 		dealingDoogiesNewCarLot.addCar(newCarForInventory);
 		
-		listOfCars = dealingDoogiesNewCarLot.getListOfCarsInInventory();
-		currentNumberOfCarsInLot = dealingDoogiesNewCarLot.getNumberOfCarsInInventory();
-		
-		printInventory(listOfCars, currentNumberOfCarsInLot);
+		numCars = dealingDoogiesNewCarLot.getNumberOfCarsInInventory();
+		dealingDoogiesNewCarLot.printInventory(numCars);
 		
 		
 		newCarForInventory = buildCarInfoForInventory("Ford", "Pinto Pony", "Bronco Orange", 29.99);
 		dealingDoogiesNewCarLot.addCar(newCarForInventory);
 		
+		numCars = dealingDoogiesNewCarLot.getNumberOfCarsInInventory();
+		
 		newCarForInventory = buildCarInfoForInventory("Honda", "CRX", "Cherry Red", 999.99);
 		dealingDoogiesNewCarLot.addCar(newCarForInventory);
-
-		listOfCars = dealingDoogiesNewCarLot.getListOfCarsInInventory();
-		currentNumberOfCarsInLot = dealingDoogiesNewCarLot.getNumberOfCarsInInventory();
-
-		printInventory(listOfCars,currentNumberOfCarsInLot);
+		
+		numCars = dealingDoogiesNewCarLot.getNumberOfCarsInInventory();
+		dealingDoogiesNewCarLot.printInventory(numCars);
 		
 	}
 	

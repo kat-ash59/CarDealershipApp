@@ -12,7 +12,11 @@ Java
 
 ### Lessons Learned
 weird stuff with line spacing in Readme.md due to markup language - need to learn more about this so can add indents and other stuff will 
-ask in next class
+
+Always Always Always add print statments to figure out what the heck is going on with the code, it is a fantastic debugging too
+
+write it out in english first then write the code helps in more ways then one
+
 
 
 Check List of items to work on to ensure requirements as of 09/14/2024 are met and completed:
@@ -126,7 +130,7 @@ checked into git hub
 
 Create a private field to hold the cars. 
 
-What data structure will you use to hold all 10 Cars?
+What data structure will you use to hold all 10 Cars? an array
 
 Create a private field that tracks how many cars are currently parked in the lot.
 
@@ -136,4 +140,23 @@ got code added, but when go to run it, gives output to CarTester rather than Car
 homework chat, checking code into github will check back tomorrow to see if i get an answer
 
 fixed issue with main completed 09/15/2024 checked into github
+
+Dealing Doogie purchased Joe Bob's car, and needs to add it to inventory.
+
+Create 2 methods:
+addCar(Car car): This allows a Car to be added to the lot. Think about the big picture: what if the lot is full? As cars come and go (car sold), how will you make certain the attendant doesn't try to park a car in a space that already has a car? Are you keeping track of the current number of cars in the lot as they are parked (and sold)?
+
+getListOfCarsInInventory(): Produces a list of all the cars currently in inventory (ie: all the parked Cars). What will this method return?
+
+finally finished 9/20/2024 checked into github
      
+     
+10) Create a class in package com.skilldistillery.dealership.app called CarLotTester. This class will have a main method. In CarLotTester:
+
+Create a CarLot instance.
+Park 1 or 2 Cars in the CarLot.
+Call getListOfCarsInInventory and display all the cars currently in inventory.
+Be careful to not display null for an empty spot in the car lot (that would freak Dealing Doogie out).
+Create a couple more cars, and park them in the CarLot.
+Call getListOfCarsInInventory to get and display the latest inventory of parked cars.
+finished 9/20/2024 checked into github
